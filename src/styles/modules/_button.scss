@@ -11,6 +11,20 @@
         display: none;
     }
 
+    &--large {
+        min-height: 32px;
+        width: auto;
+        line-height: 1.3em;
+        margin: 1em auto;
+        padding: 1em 1.5em 1em 2em;
+        letter-spacing: 1.9px;
+        min-width: 112px;
+        font-weight: 400;
+        text-transform: uppercase;
+        outline: 0;
+        white-space: normal;
+    }
+
     &--red {
         background-color: $netflix-red-color;
 

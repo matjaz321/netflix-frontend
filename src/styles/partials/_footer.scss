@@ -1,0 +1,102 @@
+$color-gray: #999;
+$color-dark-gray: #333;
+
+footer {
+    min-width: 19rem;
+    width: 100%;
+    margin-top: .8rem;
+    padding-bottom: 2rem;
+    color: $color-gray;
+    position: relative;
+
+    .footer {
+        height: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        width: 90%;
+
+        &__top {
+            padding: 0;
+            margin: 0 0 3rem;
+        }
+
+        &__links {
+            max-width: 100rem;
+            font-size: 1.3rem;
+            box-sizing: border-box;
+
+            > li {
+                list-style: none;
+                margin-left: 0;
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0;
+                margin-bottom: 1.6rem;
+                display: inline-block;
+                min-width: 10rem;
+                padding-right: 1.2rem;
+                vertical-align: top;
+
+                a {
+                    color: $color-gray;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &__select {
+            position: relative;
+            width: auto;
+
+            select {
+                line-height: 1.7;
+                background-color: $color-black;
+                background-image: none;
+                border: 1px solid $color-dark-gray;
+                font-size: 1.3rem;
+                padding: 1.2rem;
+                color: $color-white;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                border-radius: 2px;
+                text-transform: none;
+                padding-right: 3.6rem;
+                padding-left: 5rem;
+                width: 100%
+            }
+
+            &::before {
+                font-family: 'Font Awesome 5 Free';
+                content: "\f0ac";
+                visibility: visible;
+                font-weight: 900;
+                position: absolute;
+                color: $color-gray;
+                top: 1.6rem;
+                left: 1.6rem;
+            }
+
+            &::after {
+                font-family: 'Font Awesome 5 Free';
+                content: '\f078';
+                visibility: visible;
+                font-weight: 900;
+                position: absolute;
+                color: $color-gray;
+                top: 1.6rem;
+                right: 1rem;
+            }
+        }
+
+        &__country {
+            font-size: 1.3rem;
+            margin-top: 2.4rem;
+        }
+    }
+}

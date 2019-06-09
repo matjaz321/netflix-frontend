@@ -50,7 +50,7 @@
             <p>
               Watch anywhere. Cacel anytime.
             </p>
-            <button class="btn btn--red">
+            <button class="btn btn--large btn--red">
               Try 30 days free <i class="fas fa-chevron-right"></i>
             </button>
             <p class="member">
@@ -62,66 +62,91 @@
     </div>
   </header>
   <main class="main-content">
-    <div class="container">
-      <section>
-        <div>
-          <i class="fas fa-tv"></i>
+    <section class="main-content__nav">
+      <div class="nav-tab nav-tab--selected">
+        <i class="fas fa-tv fa-3x nav-tab__icon"></i>
+        <span class="nav-tab__text-desktop">
           Watch anywhere
-        </div>
-        <div>
-          <i class="fas fa-door-open"></i>
+        </span>
+        <span class="nav-tab__text-mobile">
+          Devicess
+        </span>
+      </div>
+      <div class="nav-tab">
+        <i class="fas fa-door-open fa-3x nav-tab__icon"></i>
+        <span class="nav-tab__text-desktop">
           No commitments
           Cancel online at anytime
-        </div>
-        <div>
-          <i class="fas fa-receipt"></i>
+        </span>
+        <span class="nav-tab__text-mobile">
+          Cancel
+        </span>
+      </div>
+      <div class="nav-tab">
+        <i class="fas fa-receipt fa-3x nav-tab__icon"></i>
+        <span class="nav-tab__text-desktop">
           Pick your price
+        </span>
+        <span class="nav-tab__text-mobile">
+          Price
+        </span>
+      </div>
+    </section>
+    <section class="main-content__showcase">
+      <div class="showcase-section">
+        <div class="showcase-section__wrapper">
+          <h3 class="showcase-section__small-cta">
+            Watch TV shows and movies anytime, anywhere - <br>
+            personalized for you. <a href="#">Check out some of our content.</a>
+          </h3>
+          <button class="btn btn--large btn--red ">Try 30 days free</button>
         </div>
-      </section>
-      <section>
-        <div class="container">
+      </div>
+      <div class="showcase-section">
+        <div class="showcase-section__wrapper showcase-section__block">
           <div>
-            <p>
-              Watch TV shows and movies anytime, anywhere - <br>
-              personalized for you. <a href="#">Check out some of our content.</a>
-            </p>
-            <button class="btn btn--red">Try 30 days free</button>
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_TV_UI.png">
           </div>
           <div>
-            <div>
-              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_TV_UI.png">
-              <h3>Watch on your TV</h3>
-              <p>
-                Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
-              </p>
-            </div>
-            <div>
-              <img
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_mobile_tablet_UI_2.png">
-              <h3>
-                Watch instantly or download for later
-              </h3>
-              <p>
-                Available on phone and tablet, wherever you go.
-              </p>
-            </div>
-            <div>
-              <img
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_website_UI.png">
-            </div>
+            <h3>Watch on your TV</h3>
+            <p>
+              Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-section__wrapper showcase-section__block">
+          <div>
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_mobile_tablet_UI_2.png">
+          </div>
+          <div>
+            <h3>
+              Watch instantly or download for later
+            </h3>
+            <p>
+              Available on phone and tablet, wherever you go.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-section__wrapper showcase-section__block">
+          <div>
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_website_UI.png">
+          </div>
+          <div>
             <h3>Use any computer</h3>
             <p>Watch right on Netflix.com.</p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <div class="container">
-      <p>
+    <div class="footer">
+      <p class="footer__top">
         Questions? Call 0800-724-0697
       </p>
-      <ul>
+      <ul class="footer__links">
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Investor Relations</a></li>
         <li><a href="#">Ways to Watch</a></li>
@@ -140,11 +165,15 @@
         <li><a href="#">Cookie Preferences</a></li>
         <li><a href="#">Legal Notices</a></li>
       </ul>
-      <select>
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
-      </select>
-      <p>Netflix Germany</p>
+      <div class="footer__select">
+        <div>
+            <select>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+              </select>
+        </div>
+      </div>
+      <p class="footer__country">Netflix Germany</p>
     </div>
   </footer>
 </body>

@@ -1,0 +1,26 @@
+.nav-tab {
+    font-size: 1.5rem;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-white-light-gray;
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &--selected {
+        color: $color-white;
+        border-bottom: 3px solid #e50914;
+    }
+
+    &__text-desktop {
+        display: none;
+    }
+
+    &__text-mobile {
+        margin-top: 1rem;
+    }
+}
