@@ -1,0 +1,10 @@
+svg.svg-icon-netflix-logo {
+  fill: $netflix-red-color;
+  height: 2rem;
+  width: 7.5rem;
+  vertical-align: middle;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

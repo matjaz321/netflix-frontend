@@ -1,0 +1,29 @@
+.btn {
+    color: $color-white;
+    line-height: normal;
+    padding: .7rem 1.7rem;
+    font-size: 1.6rem;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+
+    .fas {
+        display: none;
+    }
+
+    &--red {
+        background-color: $netflix-red-color;
+
+        &:hover {
+            background-color: $red-lighter-color;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        .fas {
+            display: inline-block;
+        }
+    }
+}
